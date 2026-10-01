@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "noshbistroweb",
+  "main": ".output/server/index.mjs",
+  "account_id": "34e37c6b5c03c70cec8cfde63a5d9547",
+  "compatibility_date": "2026-09-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "triggers": {
+    "crons": ["* * * * *"],
+  },
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public",
+  },
+  "d1_databases": [
+    {
+      "binding": "NOSHBISTROWEB",
+      "database_name": "noshbistroweb",
+      "database_id": "81994fbb-f8f4-4edc-9e56-876ce34258da",
+      "migrations_dir": "migrations",
+    },
+  ],
+}

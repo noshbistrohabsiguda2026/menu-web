@@ -1,0 +1,3 @@
+- [x] Confirm Firebase OTP limitation and retain current timeout handling
+- [x] Add customer order history screen and navigation
+- [x] Verify history route and existing order flow
